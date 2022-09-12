@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    tools:context=".TPemasukan">
+    <TextView
+        android:id="@+id/tpemasukanTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Tambah Pemasukan 💵"
+        android:textSize="25sp"
+        android:textColor="@color/teal_700"/>
+    <TextView
+        android:id="@+id/tanggalLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tpemasukanTitle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Tanggal:"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/formDatePicker"
+        android:layout_width="match_parent"
+        android:editable="false"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tanggalLabel"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:hint="Pilih Tanggal"
+        />
+    <TextView
+        android:id="@+id/nominalLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nominal: "
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/formDatePicker"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <EditText
+        android:id="@+id/formNominal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukan Nominal"
+        android:inputType="number"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nominalLabel" />
+
+    <TextView
+        android:id="@+id/nominalKeterangan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Keterangan: "
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/formNominal"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <EditText
+        android:id="@+id/formKeterangan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukan Keterangan"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nominalKeterangan" />
+
+    <Button
+        android:id="@+id/btnSimpanPemasukan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        app:layout_constraintTop_toBottomOf="@id/formKeterangan"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Simpan 💾"
+        android:backgroundTint="#3D9341"/>
+
+    <Button
+        android:id="@+id/btnKembaliKeMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btnSimpanPemasukan"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Kembali Ke Menu"
+        android:backgroundTint="#D39327"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/cardView"
+    android:padding="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/imageCategory"
+        android:src="@drawable/arrowred"
+        android:layout_alignParentRight="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="[Symbol]"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/symbol"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/symbol"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/money"
+        android:text="money"/>
+
+    <TextView
+        android:id="@+id/descCashflow"
+        android:layout_below="@id/symbol"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:text="keterangan" />
+
+    <TextView
+        android:id="@+id/dateCashflow"
+        android:layout_below="@id/descCashflow"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:text="tanggal" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
