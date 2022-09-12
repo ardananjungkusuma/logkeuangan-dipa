@@ -110,7 +110,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toRightOf="@+id/photoMe"
-        android:text="Tanggal: 26 Agustus 2022"
+        android:text="Tanggal: 12 September 2022"
         android:textColor="@color/black"
         android:layout_marginLeft="10dp"
         />
